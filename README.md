@@ -3,7 +3,7 @@
 
 ## About Your Package
 
-Tell people about your package
+This package let only single user logged in at one time. If user try to login from multiple devices / browsers, it will prevent the user login from other sources.
 
 ## Installation
 
@@ -25,7 +25,33 @@ CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionServiceProvider::class,
 'LaravelSingleSession' => CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionFacade::class,
 ```
 
+4. Publish assets and configuration:
+
+```
+$ php aritsan vendor:publish --provider=\CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionServiceProvider
+```
+
 ## Usage
+
+Add the following in your `app/Exception/Handler.php` on `render` method:
+
+```php
+
+use CleaniqueCoders\LaravelSingleSession\Exceptions\SingleSessionException;
+...
+public function render($request, Exception $exception)
+{
+	if ($exception instanceof SingleSessionException) {
+	    return response()->view('single-session::errors.single-session', [], 401);
+	}
+...
+```
+
+By default Laravel Single Session is disabled. You can turn it on in `.env`:
+
+```
+SINGLE_SESSION_ENABLED=true
+```
 
 ## Test
 
