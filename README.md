@@ -28,12 +28,10 @@ CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionServiceProvider::class,
 4. Publish assets and configuration:
 
 ```
-$ php aritsan vendor:publish --provider=\CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionServiceProvider
+$ php artisan vendor:publish --provider=CleaniqueCoders\LaravelSingleSession\LaravelSingleSessionServiceProvider
 ```
 
-## Usage
-
-Add the following in your `app/Exception/Handler.php` on `render` method:
+5. Add the following in your `app/Exception/Handler.php` on `render` method:
 
 ```php
 
@@ -47,11 +45,15 @@ public function render($request, Exception $exception)
 ...
 ```
 
+## Usage
+
 By default Laravel Single Session is disabled. You can turn it on in `.env`:
 
 ```
 SINGLE_SESSION_ENABLED=true
 ```
+
+By default, Laravel Single Session use `email` field from login form. You may overwrite it in `config/single-session.php`, key `credential`.
 
 ## Test
 
