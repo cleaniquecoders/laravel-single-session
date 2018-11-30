@@ -37,6 +37,5 @@ class LaravelSingleSessionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        
     }
 }
