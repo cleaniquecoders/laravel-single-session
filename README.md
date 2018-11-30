@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/cleanique-coders/laravel-single-session.svg?branch=master)](https://travis-ci.org/cleanique-coders/laravel-single-session) [![Latest Stable Version](https://poser.pugx.org/cleanique-coders/laravel-single-session/v/stable)](https://packagist.org/packages/cleanique-coders/laravel-single-session) [![Total Downloads](https://poser.pugx.org/cleanique-coders/laravel-single-session/downloads)](https://packagist.org/packages/cleanique-coders/laravel-single-session) [![License](https://poser.pugx.org/cleanique-coders/laravel-single-session/license)](https://packagist.org/packages/cleanique-coders/laravel-single-session)
+[![Build Status](https://travis-ci.org/cleaniquecoders/laravel-single-session.svg?branch=master)](https://travis-ci.org/cleaniquecoders/laravel-single-session) [![Latest Stable Version](https://poser.pugx.org/cleaniquecoders/laravel-single-session/v/stable)](https://packagist.org/packages/cleaniquecoders/laravel-single-session) [![Total Downloads](https://poser.pugx.org/cleaniquecoders/laravel-single-session/downloads)](https://packagist.org/packages/cleaniquecoders/laravel-single-session) [![License](https://poser.pugx.org/cleaniquecoders/laravel-single-session/license)](https://packagist.org/packages/cleaniquecoders/laravel-single-session)
 
 ## About Your Package
 
@@ -7,10 +7,10 @@ Tell people about your package
 
 ## Installation
 
-1. In order to install `cleanique-coders/laravel-single-session` in your Laravel project, just run the *composer require* command from your terminal:
+1. In order to install `cleaniquecoders/laravel-single-session` in your Laravel project, just run the *composer require* command from your terminal:
 
 ```
-$ composer require cleanique-coders/laravel-single-session
+$ composer require cleaniquecoders/laravel-single-session
 ```
 
 2. Then in your `config/app.php` add the following to the providers array:
@@ -37,7 +37,7 @@ $ vendor/bin/phpunit  --testdox --verbose
 
 ## Contributing
 
-Thank you for considering contributing to the `cleanique-coders/laravel-single-session`!
+Thank you for considering contributing to the `cleaniquecoders/laravel-single-session`!
 
 ### Bug Reports
 
@@ -49,7 +49,7 @@ Remember, bug reports are created in the hope that others with the same problem 
 
 ## Coding Style
 
-`cleanique-coders/laravel-single-session` follows the PSR-2 coding standard and the PSR-4 autoloading standard. 
+`cleaniquecoders/laravel-single-session` follows the PSR-2 coding standard and the PSR-4 autoloading standard. 
 
 You may use PHP CS Fixer in order to keep things standardised. PHP CS Fixer configuration can be found in `.php_cs`.
 
