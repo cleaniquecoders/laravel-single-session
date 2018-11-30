@@ -1,13 +1,19 @@
-@extends('errors::illustrated-layout')
+@extends('layouts.app')
 
-@section('code', '401')
-@section('title', __('Unauthorized'))
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Unauthorized') }}</div>
 
-@section('image')
-	<div 
-		style="background-image: url({{ asset('/svg/403.svg') }});" 
-		class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
-	</div>
+                <div class="card-body">
+                    <p>
+                    	{{ __('You already logged in on other device.') }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
-
-@section('message', __('You already logged in on other device.'))
